@@ -1,0 +1,54 @@
+
+<html>
+	<head>
+		<title>javascript</title>
+	</head>
+	<body>
+		<input type="text" id="input2" />
+		<button onclick="stringtonumber();">String to Number</button>
+		<button onclick="numbertostring();">Number to String</button>
+		<button onclick="stringtoarray();">String to Array</button>
+		<button onclick="fizzbuzz();">FizzBuzz</button>
+	</body>
+	<script>
+		var input2 = document.getElementById("input2");
+		function stringtonumber() {
+			let input3 = input2.value;
+			console.log(input3);
+			console.log(typeof input3);
+			let quantity = Number(input3);
+			console.log(quantity);
+			console.log(typeof quantity);
+		}
+		function numbertostring() {
+			let input3 = input2.value;
+			console.log(input3);
+			console.log(typeof input3);
+			let text = input3.toString();
+			console.log(text);
+			console.log(typeof text);
+		}		
+		function stringtoarray() {
+			let input3 = input2.value;
+			console.log(input3);
+			console.log(typeof input3);
+			let array3 = input3.split(' ');
+			console.log(array3);
+			console.log(typeof array3);
+		}	
+		function fizzbuzz() {	
+			let input3 = input2.value;
+			for (let i=1; i<=input3; i++) { 
+				if (i%3==0 && i%5==0) { 
+					console.log("FizzBuzz");
+				} else if (i%5==0) { 
+					console.log("Buzz");
+				} else if (i%3==0) { 
+					console.log("Fizz");
+				} else {
+					console.log(i);		
+				}			
+			}	 
+		}	
+	</script>	
+</html>	
